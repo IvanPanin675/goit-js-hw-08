@@ -1,37 +1,3 @@
-// import throttle from "lodash.throttle";
-
-// const form = document.querySelector('.feedback');
-
-// const LOCALSTORAGE_KEY = 'feedback-form-state';
-
-// form.addEventListener('input', throttle(onInputForm, 500));
-// form.addEventListener('submit', onSubmitForm);
-// window.addEventListener('load', updateOutputOnload);
-
-// function onInputForm(e) {
-//     e.preventDefailt();
-//     const email = form.elements.email.value;
-//     const message = form.elements.message.value;
-//     localStorage.setItem(LOCALSTORAGE_KEY, JSON.stringify({ message, email }));
-// };
-
-// function updateOutputOnload(e) {
-//     e.preventDefailt();
-//     const outputTextContent = localStorage.getItem(LOCALSTORAGE_KEY);
-//     const outputObjectContent = JSON.parse(outputTextContent) || { email: "", message: "" };
-//     const { email, message } = outputObjectContent;
-//     form.elements.email.value = email;
-//     form.elements.message.value = message;
-// };
-
-// function onSubmitForm(e) {
-//     e.preventDefailt();
-//     const { email, message } = e.currentTarget.elements;
-//     console.log({ email: email.value, message: message.value });
-//     localStorage.clear();
-//     form.reset();
-// }
-
 import throttle from "lodash.throttle";
 
 const refs = {
