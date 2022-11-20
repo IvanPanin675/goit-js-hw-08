@@ -1,6 +1,6 @@
 import Player from '@vimeo/player';
 
-const throttle = require('lodash.throttle');
+import throttle from "lodash.throttle";
 
 const ifFrameRef = document.querySelector('#vimeo-player');
 const player = new Player(ifFrameRef);
